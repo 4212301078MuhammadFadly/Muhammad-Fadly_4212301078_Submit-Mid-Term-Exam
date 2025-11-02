@@ -1,0 +1,28 @@
+=======================================================
+Program Klasifikasi EMNIST Dimulai pada Sat Nov  1 10:12:25 2025
+Log Output: D:\Muhammad Fadly\SEMESTER 5\Machine Vision\ATS_4212301078_Muhammad Fadly\output\evaluation_log.txt
+=======================================================
+
+TITLE : ATS MACHINE VISION
+Name  : Muhammad Fadly
+NIM   : 4212301078
+Class : MECHATRONICS 5C MORNING
+
+Memuat dan melakukan sampling data seimbang...
+Total sampel final: 13000 (26 kelas)
+
+---------- FASE 2: EVALUASI LOOCV FINAL ----------
+
+[HOG] Ekstraksi fitur: Orient=9, PPC=(6, 6), CPB=(2, 2)...
+Dimensi fitur HOG: (13000, 324)
+
+[LOOCV] Memulai LOOCV FINAL (Kernel=linear, C=1.0)...
+PERINGATAN: LOOCV pada 13000 sampel akan memakan waktu LAMA (jam/hari).
+
+--- Hasil Metrik Evaluasi LOOCV FINAL ---
+Waktu komputasi total LOOCV: 22.32 jam
+Akurasi LOOCV: 82.64%
+
+[VISUALISASI] Confusion Matrix disimpan ke: D:\Muhammad Fadly\SEMESTER 5\Machine Vision\ATS_4212301078_Muhammad Fadly\output\hasil confusion_matrix_hog_svm_linear_Muhammad Fadly_4212301078.png
+
+--- EKSEKUSI PROGRAM SELESAI ---
