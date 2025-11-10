@@ -1,0 +1,78 @@
+PS D:\Muhammad Fadly\SEMESTER 5\Machine Vision\ATS_4212301078_Muhammad Fadly> "D:/Muhammad Fadly/SEMESTER 5/Machine Vision/Anaconda/Scripts/activate"
+
+D:/Muhammad Fadly/SEMESTER 5/Machine Vision/Anaconda/Scripts/activate
+PS D:\Muhammad Fadly\SEMESTER 5\Machine Vision\ATS_4212301078_Muhammad Fadly> conda activate base
+conda : The term 'conda' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or 
+if a path was included, verify that the path is correct and try again.
++ conda activate base
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (conda:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS D:\Muhammad Fadly\SEMESTER 5\Machine Vision\ATS_4212301078_Muhammad Fadly> & "D:/Muhammad Fadly/SEMESTER 5/Machine Vision/Anaconda/python.exe" "d:/Muhammad Fadly/SEMESTER 5/Machine Vision/ATS_4212301078_Muhammad Fadly/main.py"
+TITLE : ATS MACHINE VISION
+Name  : Muhammad Fadly
+NIM   : 4212301078
+Class : MECHATRONICS 5C MORNING
+
+--- Load Dataset ---
+CSV file loaded successfully.
+Image orientation fixed.
+
+--- Data Sampling ---
+Taking 500 samples per class...
+Sampling complete. Total data for this experiment : 13000 samples.
+
+--- HOG Feature Extraction ---
+Processing images for HOG feature extraction...
+HOG extraction finished in 6.54 seconds.
+HOG feature dataset shape : (13000, 144)
+
+--- Model Evaluation with LOOCV ---
+SVM model prepared with kernel ='linear' and C =1.0
+Validation method: Leave-One-Out (will run 13000 iterations).
+
+===============================================================
+STARTING LOOCV EVALUATION.....)
+
+LOOCV evaluation finished in 556.81 minutes.
+
+--- Display Performance Results ---
+Accuracy: 82.2077%
+
+Classification Report (Precision, Recall, F1-Score):
+              precision    recall  f1-score   support
+
+           A     0.7070    0.7480    0.7269       500
+           B     0.8364    0.8280    0.8322       500
+           C     0.8258    0.8720    0.8482       500
+           D     0.8152    0.8380    0.8264       500
+           E     0.8267    0.8300    0.8283       500
+           F     0.8235    0.8400    0.8317       500
+           G     0.6945    0.6320    0.6618       500
+           H     0.7784    0.8360    0.8062       500
+           I     0.6517    0.6660    0.6588       500
+           J     0.8742    0.8200    0.8462       500
+           K     0.9156    0.8680    0.8912       500
+           L     0.6840    0.7100    0.6968       500
+           M     0.8549    0.8600    0.8574       500
+           N     0.7258    0.7040    0.7147       500
+           O     0.8647    0.9200    0.8915       500
+           P     0.8831    0.8760    0.8795       500
+           Q     0.6530    0.7000    0.6757       500
+           R     0.8230    0.8000    0.8114       500
+           S     0.9393    0.9280    0.9336       500
+           T     0.8604    0.8380    0.8490       500
+           U     0.8336    0.8820    0.8571       500
+           V     0.8686    0.8860    0.8772       500
+           W     0.8537    0.8400    0.8468       500
+           X     0.9275    0.8960    0.9115       500
+           Y     0.9361    0.8200    0.8742       500
+           Z     0.9630    0.9360    0.9493       500
+
+    accuracy                         0.8221     13000
+   macro avg     0.8238    0.8221    0.8224     13000
+weighted avg     0.8238    0.8221    0.8224     13000
+
+Generating Confusion Matrix plot...
+Confusion Matrix plot saved as 'confusion_matrix_loocv_Muhammad Fadly.png'
